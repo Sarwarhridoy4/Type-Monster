@@ -213,7 +213,11 @@ button {
     display: flex;
     flex-direction: column;
   }
+  #question{
+    padding: 40px 20px;
+  }
+  #display{
+    padding-left: 1rem 1rem;
+  }
 }
-#question{
-  padding: 40px 20px;
-}
+
