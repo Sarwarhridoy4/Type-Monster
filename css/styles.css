@@ -190,3 +190,21 @@ button {
     flex-direction: column;
   }
 }
+
+/* Blog page design. */
+#nav-item{
+  display: flex;
+  margin-top: 25px;
+  margin-left: 20px;
+  
+}
+#nav-item li{
+  margin-left: 10px;
+  list-style: none;
+}
+#nav-item li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}

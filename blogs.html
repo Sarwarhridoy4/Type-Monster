@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="emerald">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./icons/icons8-keyboard-50.png" type="image/x-icon">
+    <!-- daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.27.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+    <title>Blogs-Type Monster</title>
+</head>
+<header>
+    <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <a class="btn btn-ghost normal-case text-xl" href="./index.html">Blogs-Type Monster</a>
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal p-0">
+            <li><a href="./index.html">Home</a></li>
+          </ul>
+        </div>
+      </div>
+</header>
+<body>
+    <main>
+        <section class="mt-6">
+            <h1 class="text-center text-yellow-400 font-semibold text-3xl">All blogs</h1>
+        </section>
+        <section class="mt-8 w-9/12 mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-8">
+                <div>
+                    <div class="card w-96 bg-base-100 shadow-xl md:mx-auto">
+                        <figure><img src="./img/blog-banner.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Local Vs Session Storage</h2>
+                          <p>sessionStorage is similar to localStorage...</p>
+                          <div class="card-actions justify-end">
+                            <button title="Click twich to toggle detailse" class="btn btn-primary" onclick="toggleClass('web-storage')">Show/Hide Detailse</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div>
+                    <div id="web-storage" class="alert alert-info shadow-lg hidden">
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current flex-shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                          <span>sessionStorage is similar to localStorage ; the difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. Whenever a document is loaded in a particular tab in the browser, a unique page session gets created and assigned to that particular tab.</span>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-8">
+                <div>
+                    <div class="card w-96 bg-base-100 shadow-xl md:mx-auto">
+                        <figure><img src="./img/scopes.jpeg" alt="Shoes" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Local Vs Global Scope</h2>
+                          <p>A variable's scope is the range of the script...</p>
+                          <div class="card-actions justify-end">
+                            <button title="Click twich to toggle detailse" class="btn btn-primary" onclick="toggleClass('scope')">Show/Hide Detailse</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                <div>
+                    <div id="scope" class="alert alert-info shadow-lg hidden">
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current flex-shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                          <span>A variable's scope is the range of the script where it is visible. Variables have either global or local scope. A global variable exists only once in a script, and is visible in every function.</span>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-8">
+                <div>
+                    <div class="card w-96 bg-base-100 shadow-xl md:mx-auto">
+                        <figure><img src="./img/event-loop.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Event Loop</h2>
+                          <p>JavaScript has a runtime model based on...</p>
+                          <div class="card-actions justify-end">
+                            <button title="Click twich to toggle detailse" class="btn btn-primary" onclick="toggleClass('event-loop')">Show/Hide Detailse</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                <div>
+                    <div id="event-loop" class="alert alert-info shadow-lg hidden">
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current flex-shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                          <span>JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks. This model is quite different from models in other languages like C and Java.</span>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-8">
+                <div>
+                    <div class="card w-96 bg-base-100 shadow-xl md:mx-auto">
+                        <figure><img src="./img/undefined.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                          <h2 class="card-title">Getting undefined</h2>
+                          <p>You will get undefined value when you call a...</p>
+                          <div class="card-actions justify-end">
+                            <button title="Click twich to toggle detailse" class="btn btn-primary" onclick="toggleClass('getting-undefined')">Show/Hide Detailse</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                <div>
+                    <div id="getting-undefined" class="alert alert-info shadow-lg hidden">
+                        <div>
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="stroke-current flex-shrink-0 w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                          <span>You will get undefined value when you call a non-existent property or method of an object. In the above example, a function Sum does not return any result but still we try to assign its resulted value to a variable. So in this case, result will be undefined.</span>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleClass(id){
+            document.getElementById(id).classList.toggle('hidden')
+        }
+    </script>
+</body>
+</html>
